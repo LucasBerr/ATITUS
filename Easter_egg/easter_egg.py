@@ -32,18 +32,36 @@ invalid_egg = False
 if egg_type == "A" or egg_type == "B" or egg_type == "C":
     pass
 else:
-    print("Invalid egg")
-    invalid_egg = False
+    print("\n***Invalid egg***")
+    invalid_egg = True
 # Flag that captures if the amount of eggs ins valid or not
 invalid_amount = False
 if amount < 1:
-    print("Invalid Amount")
+    print("\n***Invalid Amount***")
     invalid_amount = True
+
 
 # Check if the flags are not true
 if invalid_amount == False and invalid_egg == False:
-    due = 0
+    # Print a divider to divide the order from the result
+    print()
     if egg_type == "A":
-        if amount > 50:
-            print("The limit p/user of this egg is")
+        if amount > limit_A:
+            print("The limit p/user of this egg is", limit_A)
+        else:
+            print(f"order = {amount} egg(s) of type \n{egg_type} (simple)")
+            print(f"total value = R${(amount * price_A):.2f}")
+    if egg_type == "B":
+        if amount > limit_B:
+            print("The limit p/user of this egg is", limit_B)
+        else:
+            print(f"Order = {amount} egg(s) of type \n{egg_type} (stuffed)")
+            print(f"total value = R${(amount * price_B):.2f}")
+            
+    if egg_type == "C":
+        if amount > limit_C:
+            print("The limit p/user of this egg is ", limit_C)
+        else:
+            print(f"Order = {amount} egg(s) of type \n{egg_type} (with surprise)")
+            print(f"total value = R${(amount * price_C):.2f}")
 

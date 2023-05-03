@@ -1,4 +1,3 @@
-import sys
 from List import List
 
 def main():
@@ -14,23 +13,20 @@ def main():
                 Shopping_list.add_item(value)
             # Remove item
             case 2:
-                value = int(input("Remove item using name [1]\n"
-                                  "Remove item using index [2]\n"))
+                Shopping_list.remove()
             # Remove same items
             case 3:
-                ...
+                Shopping_list.remove_equals()
             # Sort list
             case 4:
-                ...
+                Shopping_list.sorting()
             # show the list
             case 5:
                 Shopping_list.show()
-            # Clean list
+            # Clear list
             case 6:
-                ...
-            # Stop Program
-            case 7:
-                ...
+                Shopping_list.clear()
+            #case 7: Stop Program
 
 def get_menu():
     print()

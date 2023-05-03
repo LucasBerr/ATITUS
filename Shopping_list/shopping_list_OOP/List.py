@@ -1,9 +1,7 @@
-import sys
 class List:
-    def __init__(self, item=None):
+    def __init__(self):
         # Inicializar a lista com o item
         self.Slist = []
-        self.add_item(item)
 
     # Add string to list
     def add_item(self, item):
@@ -34,7 +32,35 @@ class List:
             else:
                 print("Index invalid!")
 
+    # Removing something that repeats
+    def remove_equals(self):
+        for i in self.Slist:
+            if self.Slist.count(i) > 1:
+                self.Slist.remove(i)
+                print(f"{i} removed!")
+
+    # Sorting list
+    def sorting(self):
+        value = int(input("Arrange in ascending alphabetical order [1]\n"
+                          "Arrange in descending alphabetical order [2]\n"
+                          "Insert: "))
+        while value not in [1,2]:
+            value = int(input("Pleas insert [1] or [2]: "))
+        if value == 1:
+            self.Slist.sort()
+        else:
+           self.Slist.sort(reverse=True)
+           
+    # Display list in the terminal
     def show(self):
-        print("Your list is composed by: \n")
-        for i in range(len(self.Slist)):
-            print(f"- {self.Slist[i]}")
+        if len(self.Slist) > 0:
+            print("Your list is composed by: \n")
+            for i in range(len(self.Slist)):
+                print(f"- {self.Slist[i]}")
+        else:
+            print("Your list is empty")
+
+    # Clear all the list
+    def clear(self):
+        self.Slist.clear()
+        

@@ -18,43 +18,22 @@ DOM SEG TER QUA QUI SEX SAB
 # Pegar o numero de dias do mês do usuário e verificar se é válido
 dias_do_mes = int(input("Informe o numero de dias do mês: "))
 # Criando flag dos dias do mês
-dias_validos = False
-while True: 
-    for i in range(28,32):
-        if dias_do_mes == i:
-            dias_validos = True
-    if dias_validos == False:
-        dias_do_mes = int(input("VALOR INVÁLIDO! Informe o número de dias do mês: "))
-        for i in range(28, 32):
-            if dias_do_mes == i:
-                print(" ")
-    else:
-        break        
-# Usando listas:  
-#while True:
-#   if dias_do_mes not in [28, 29, 30, 31]:
-#       dias_do_mes = int(input("VALOR INVÁLIDO! Informe o número de dias do mês: "))
-#       if dias_do_mes in [28, 29, 30, 31]:
-#           print()
-#   else:
-#       break
+dias_validos = False       
+while True:
+   if dias_do_mes not in [28, 29, 30, 31]:
+       dias_do_mes = int(input("VALOR INVÁLIDO! Informe o número de dias do mês: "))
+       if dias_do_mes in [28, 29, 30, 31]:
+           print()
+   else:
+       break
     
-# Pegar o numero da semana na qual o mês começa e verificar se é válido
-dia_da_semana = int(input("Informe o dia da semana: "))
-while True: 
-    for i in range(1,8):
-        if dias_do_mes == i:
-            dias_validos = True
-    if dias_validos == False:
-        dias_do_mes = int(input("VALOR INVÀLIDO! Informe o dia da semana: "))
+# Pegar o dia da semana na qual o mês começa e verificar se é válido
+dia_da_semana = int(input("Informe o dia da semana: ")) 
+while True:
+    if dia_da_semana not in [1, 2, 3, 4, 5, 6, 7]:
+        dia_da_semana = int(input("VALOR INVÀLIDO! Informe o dia da semana: "))
     else:
-        break 
-# Usando listas:  
-#while True:
-#    if dia_da_semana not in [1, 2, 3, 4, 5, 6, 7]:
-#        dia_da_semana = int(input("VALOR INVÀLIDO! Informe o dia da semana: "))
-#    else:
-#        break
+        break
 
 print()
 # Imprimir na tela os dias da semana

@@ -41,8 +41,8 @@ while In_out != 7:
             # Remover com a posição (index)
             elif removendo == 2:
                 valor = int(input("Qual index você deseja remover? "))
-                if valor in range(len(lista_compras)):
-                    lista_compras.pop(valor+1)
+                if (valor-1) in list(range(len(lista_compras))):
+                    lista_compras.pop(valor-1)
                     print("Index removido com sucesso")
                 else:
                     print("Index não encontrado!")
@@ -55,6 +55,7 @@ while In_out != 7:
         # Imprime a lista
         case 5:
             print("Sua lista de compras consiste em: ")
+            print()
             for i in lista_compras:
                 print(i)
                 

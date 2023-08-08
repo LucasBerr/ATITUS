@@ -35,3 +35,12 @@ interface_de_usuário()
 atualizacoes:
 interface 
 banco de dados
+
+MAPEAMENTO DOS ERROS:
+
+0 = nao tem erro
+1 = tentando depositar ou sacar um valor negativo
+2 = credito insuficiente
+50 = nenhum usuario encontrado no banco
+3 = usuário nao encontrado
+5 = 

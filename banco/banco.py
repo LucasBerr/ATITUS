@@ -1,9 +1,8 @@
 from usuarios import *
-
+from interface import *
 
 def main():
-    print("main")
-    criar_conta("Lucas Berr", "1233", "044.549.040-30", "lucastberr@gmail.com")
+    bem_vindo()
 
 if __name__ == "__main__":
     main()

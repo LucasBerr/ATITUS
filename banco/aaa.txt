@@ -1,0 +1,44 @@
+{
+    "0": {
+        "nome": "Lucas berr",
+        "saldo": "1000.0",
+        "limite": "0",
+        "cpf": "04454904030",
+        "email_correntista": "lucastberr@gmail.com"
+    },
+    "1": {
+        "nome": "Lucas berr",
+        "saldo": "1000.0",
+        "limite": "0",
+        "cpf": "04454904030",
+        "email_correntista": "lucastberr@gmail.com"
+    },
+    "2": {
+        "nome": "Leonardo rimolo",
+        "saldo": "0",
+        "limite": 1000.0,
+        "cpf": "024385387534",
+        "email_correntista": "leo@rimolo.com"
+    },
+    "3": {
+        "nome": "Leonardo Rimolo",
+        "saldo": "0",
+        "limite": 10.0,
+        "cpf": "04439u5983u",
+        "email_correntista": "LeonardoRimolaoooo@gmail.com"
+    },
+    "5": {
+        "nome": "Urso panda",
+        "saldo": "0",
+        "limite": 9999.0,
+        "cpf": "123123",
+        "email_correntista": "Ursopanda@gmail.com"
+    },
+    "6": {
+        "nome": "Maria",
+        "saldo": "0",
+        "limite": 1000.0,
+        "cpf": "123123211",
+        "email_correntista": "Maria@gmail.com"
+    }
+}

@@ -1,4 +1,3 @@
-import threading
 
 class Carro:
     # método construtor
@@ -84,7 +83,7 @@ _______\_/________\_/_______________________
      |_/ \________/ \___|  -----
 _______\_/________\_/_______________________
     """
-        self.backwards = """
+        self.backward = """
      -----  _______      
    -----   //  ||\ \     
 ---  _____//___||_\ \___ 
@@ -105,10 +104,10 @@ _______\_/________\_/_______________________
         return self.notMoving
 
     def moving_backwards(self):
-        return self.backwards
+        return self.backward
 
     def move_forward(self):
-        return self.movingForward
+        return self.forward
 
     def stopping(self):
         return self.stop
@@ -120,7 +119,7 @@ _______\_/________\_/_______________________
         return self.notMoving
 
 class Game:
-    def __int__(self):
+    def __init__(self):
         self.on = True
         self.options = """
         1 = ligar carro
@@ -134,7 +133,7 @@ class Game:
         """
 
     def is_on(self):
-        return self.on()
+        return self.on
 
     def show_options(self, car:Car_on_game):
         print(self.options)
@@ -167,6 +166,6 @@ class Game:
 
 if __name__ == "__main__":
     carrinho = Car_on_game()
-    the_game = Game(car=carrinho)
+    the_game = Game()
     while the_game.is_on() == True:
-        the_game.show_options()
+        the_game.show_options(car=carrinho)

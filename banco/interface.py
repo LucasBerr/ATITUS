@@ -129,12 +129,28 @@ def atualizar_conta_interface():
 # em desenvolvimento:
 def deletar_conta_interface():
     print("Escolha a conta que deseja deletar!")
-    if conta == 50:
-        print("Nenhum usuário encontrado no banco de dados")
-        interface_do_usuario()
+
 
     conta = buscar_conta_interface()
-    # SÓ VAI LEOOOOOOOO
+    if conta == 50:
+        print()#Espaçamento
+        print("Nenhum usuário encontrado no banco de dados")
+        interface_do_usuario()
+    
+    opcoes =("""
+            1 - Deletar Conta!
+            10 - Sair
+            """)
+    print(opcoes)
+
+    escolha = escolher(["1","10"])
+    
+    match escolha:
+        case "1":
+            deletar_conta(conta)
+            print("A conta foi do Deletada com sucesso!")
+
+
 
 
 def dados_formatados_usuario(usuario):

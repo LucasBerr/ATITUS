@@ -26,5 +26,12 @@
         "limite": 2000.0,
         "cpf": "04454904030",
         "email_correntista": "123213@gmail.com"
+    },
+    "4": {
+        "nome": "Lucas",
+        "saldo": "0",
+        "limite": 22222.0,
+        "cpf": "1111111",
+        "email_correntista": "123123@32u48923u"
     }
 }

@@ -1,4 +1,6 @@
-# Peço perdão pelas erros e péssimo design, mas por enquanto está assim
+# Erros que conheço porém estou sem tempo de arrumar
+* ID pode se  REPETIR E DAR RUIM EM TODO O CÓDIGO!
+
 
 Banco deve ter
 dono / string

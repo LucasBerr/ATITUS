@@ -1,18 +1,4 @@
 {
-    "0": {
-        "nome": "Lucas berr",
-        "saldo": "1000.0",
-        "limite": "0",
-        "cpf": "04454904030",
-        "email_correntista": "lucastberr@gmail.com"
-    },
-    "1": {
-        "nome": "Lucas berr",
-        "saldo": "1000.0",
-        "limite": "0",
-        "cpf": "04454904030",
-        "email_correntista": "lucastberr@gmail.com"
-    },
     "2": {
         "nome": "Leonardo rimolo",
         "saldo": "0",
@@ -33,5 +19,12 @@
         "limite": 1000.0,
         "cpf": "123123211",
         "email_correntista": "Maria@gmail.com"
+    },
+    "5": {
+        "nome": "Lucas Tabelli Berr",
+        "saldo": "0",
+        "limite": 2000.0,
+        "cpf": "04454904030",
+        "email_correntista": "123213@gmail.com"
     }
 }

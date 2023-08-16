@@ -14,8 +14,6 @@ def criar_conta(nome, limite, cpf, email_correntista):
     limite_usuario = float(limite)
     email_correntista = email_correntista
 
-    print(cpf)
-
     # Criar um novo usuário
     novo_usuario = {
                 "nome": nome_usuario,
@@ -160,8 +158,9 @@ def depositar(conta, valor):
 
 # DELETAR CONTA:
 def deletar_conta(conta):
+    print("Deletando conta!")
     dados = ler_arquivo()
-    
+
     if dados == 1:
         return 50  # Nenhum usuário encontrado no banco
         

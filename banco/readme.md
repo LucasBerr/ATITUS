@@ -1,3 +1,5 @@
+# Peço perdão pelas erros e péssimo design, mas por enquanto está assim
+
 Banco deve ter
 dono / string
 dono_email / string

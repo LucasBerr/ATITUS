@@ -52,7 +52,7 @@ class List:
            self.Slist.sort(reverse=True)
            
     # Display list in the terminal
-    def show(self):
+    def __str__(self):
         if len(self.Slist) > 0:
             print("Your list is composed by: \n")
             for i in range(len(self.Slist)):

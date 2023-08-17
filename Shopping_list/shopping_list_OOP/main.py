@@ -22,7 +22,7 @@ def main():
                 Shopping_list.sorting()
             # show the list
             case 5:
-                Shopping_list.show()
+                print(Shopping_list)
             # Clear list
             case 6:
                 Shopping_list.clear()
